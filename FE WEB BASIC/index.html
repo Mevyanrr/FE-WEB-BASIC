@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Parking Management</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-left">
+        <div class="pict-logo">
+          <img src="logo parkir.png
+" class="img-class" />
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="menu">
+          <a href="#home" class="value">Home</a>
+          <a href="#about" class="value">About</a>
+          <a href="#service" class="value">Services</a>
+          <a href="#contact" class="value">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hapus-float"></div>
+    <section id="home">
+      <video class="video1" poster="image/logo parkir.png" autoplay muted loop>
+        <source
+          src="Busy Parking Lot - Aerial Time-Lapse.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="desc-home">
+        <h5>solusi tepat dalam</h5>
+        <h1><strong>Mengatasi Permasalahan Parkir</strong></h1>
+        <h5>--lebih dari 6 juta pengguna--</h5>
+      </div>
+      <img
+        class="imgdec"
+        src="flat-lay-blue-paint-brush-strokes-surface.png"
+        alt=""
+      />
+    </section>
+    <div class="hapusfloat"></div>
+    <section id="about">
+      <br />
+      <br />
+      <div class="first-about">
+        <img src="logo berwarna.jpg" class="logoimg" />
+      </div>
+      <br />
+      <div class="scnd-about">
+        <img src="mockup-aplikasi.png" class="about-img" />
+        <p class="dec-abt">
+          Aplikasi PARKIR merupakan salah satu inovasi dari solusi berbagai
+          permasalahan yang ada, seperti parkir illegal yang marak. Fitur-fitur
+          dalam aplikasi PARKIR ini sangat membantu masyarakat dengan memberikan
+          kemudahan dalam mencari lokasi parkir legal, keamanan, dan kenyamanan.
+        </p>
+        <img src="mockup2.png" class="about2-img" />
+      </div>
+    </section>
+    <div class="hapusfloat"></div>
+    <section id="service">
+      <div class="judul-srv">
+        <p class="srv-txt">Our Service</p>
+        <img class="bkc-txt" src="backg text srv.png" />
+      </div>
+      <div class="content-srv">
+        <main class="grid">
+          <article>
+            <img class="srv1-img" src="parkir motor.jpg" />
+            <div class="desk-srv">
+              <h2>Jasa Penitipan Motor</h2>
+              <p>Rp2.000 /item</p>
+              <br />
+            </div>
+          </article>
+          <article>
+            <img class="srv1-img" src="car park fix.jpg" />
+            <div class="desk-srv">
+              <h2>Jasa Penitipan Mobil</h2>
+              <p>Rp5.000 /item</p>
+              <br />
+            </div>
+          </article>
+          <article>
+            <img class="srv-img" src="tire service.png" />
+            <div class="desk-srv1">
+              <h2>Jasa Khusus Ban</h2>
+              <h5>Tambal ban, pompa ban, perbaikan ban</h5>
+              <p>Harga sesuai kondisi yang berlaku</p>
+            </div>
+          </article>
+          <article>
+            <img class="srv-img" src="helmet.jpg" />
+            <div class="desk-srv">
+              <h2>Jasa Sewa Helm</h2>
+              <p>Rp15.000 /item</p>
+              <br />
+            </div>
+          </article>
+        </main>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="form">
+          <div class="info-form">
+            <div class="lct-txt">📍Our Location</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4490541065547!2d112.61110207405257!3d-7.952459679231565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78827f2d620975%3A0xf19b7459bbee5ed5!2sUniversitas%20Brawijaya!5e0!3m2!1sen!2sid!4v1737523130579!5m2!1sen!2sid"
+              height="40%"
+              width="70%"
+              style="border-radius: 5%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="fill-form">
+            <div class="lct-txt">📞Will you contact us?</div>
+            <form>
+              <input class="pp" type="text" placeholder="Your name" id="nama" />
+
+              <input
+                class="pp"
+                type="text"
+                placeholder=" Your e-mail"
+                id="email"
+              />
+
+              <textarea
+                class="pp"
+                placeholder=" Your Message..."
+                cols="40"
+                rows="7"
+                id="pesan"
+              ></textarea>
+              <button id="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="jeda">
+      <p class="txt-icon">nikmati parkir nyaman, dompet aman!</p>
+      <div class="animasi">
+        <img src="icon motor.png" class="motoricon-img" />
+      </div>
+    </section>
+    <script>
+      window.onload = function () {
+        document.querySelector("animasi").style.animationPlayState = "running";
+      };
+      document
+        .getElementById("submit")
+        .addEventListener("click", function (event) {
+          event.preventDefault;
+          let nama = document.getElementById("nama").value.trim();
+          let email = document.getElementById("email").value.trim();
+          let pesan = document.getElementById("pesan").value.trim();
+          if (nama == "" || email == "" || pesan === "") {
+            alert("NOT SUBMITTED! Mohon isi semua kolom dengan baik!");
+          } else {
+            alert("SUCCESSFULLY SUBMITTED, Terimakasih.");
+          }
+        });
+    </script>
+  </body>
+</html>
