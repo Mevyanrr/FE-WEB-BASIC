@@ -1,2 +1,2 @@
 # website-portofolio
-using html, css, javaScript dasar
+html, css, js basic || december 2024 - january 2025
